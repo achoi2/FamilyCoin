@@ -4,6 +4,7 @@ import HomePage from './Components/HomePage';
 import NavBar from './Components/NavBar';
 import CreateTask from './Components/CreateTask';
 import CompletedTasks from './Components/CompletedTasks';
+import AddChild from './Components/AddChild';
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/create" component={CreateTask} />
                     <Route exact path="/completed" component={CompletedTasks} />
+                    <Route exact path="/add" component={AddChild} />
                 </Switch>
             </div>
         </HashRouter>

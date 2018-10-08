@@ -6,6 +6,7 @@ const NavBar = () => {
         <nav>
             <ul>
                 <li><Link to='/' >Home</Link></li>
+                <li><Link to='/add'>Add a Child</Link></li>
                 <li><Link to='/create'>Create Task</Link></li>
                 <li><Link to='/completed'>Completed Tasks</Link></li> 
             </ul>

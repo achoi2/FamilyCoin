@@ -55,10 +55,6 @@ class App extends Component {
             <div>
                 <h2>Allowance</h2>
                 <p>The parent is {this.state.parent}</p>
-                <AddChild />
-                <hr />
-                <hr />
-                <CompletedTasks />
                 <h2>{this.state.message}</h2>
                 <p>
                     The task is ({this.state.task}) for {this.state.value}{' '}
