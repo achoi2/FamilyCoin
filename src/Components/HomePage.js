@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import web3 from '../web3';
 import allowance from '../allowance';
+import AddChild from './AddChild';
+import CompletedTasks from './CompletedTasks';
 
 class App extends Component {
     constructor(props) {
@@ -27,29 +29,6 @@ class App extends Component {
         });
     }
 
-    setChild = async () => {
-        const accounts = await web3.eth.getAccounts();
-
-        await allowance.methods.setChild().send({
-            from: accounts[0]
-        });
-
-        this.setState({ child: accounts[0] });
-    };
-
-    submitTask = async e => {
-        e.preventDefault();
-
-        const accounts = await web3.eth.getAccounts();
-
-        
-
-        await allowance.methods.createTask(this.state.task).send({
-            from: accounts[0],
-            value: web3.utils.toWei(this.state.value, 'ether')
-        });
-
-    };
 
     incompleteTask = async () => {
         const accounts = await web3.eth.getAccounts();
@@ -65,8 +44,6 @@ class App extends Component {
     completeTask = async () => {
         const accounts = await web3.eth.getAccounts();
 
-        
-
         await allowance.methods.taskCompleted().send({
             from: accounts[0]
         });
@@ -78,37 +55,16 @@ class App extends Component {
             <div>
                 <h2>Allowance</h2>
                 <p>The parent is {this.state.parent}</p>
-                <p>
-                    The child is {this.state.child}
-                    <button onClick={this.setChild}>Set Child</button>
-                </p>
+                <AddChild />
                 <hr />
-                <form onSubmit={this.submitTask}>
-                    <h3>Set task</h3>
-                    <div>
-                        <input
-                            placeholder="Enter amount"
-                            value={this.state.value}
-                            onChange={e =>
-                                this.setState({ value: e.target.value })
-                            }
-                        />
-                        <input
-                            placeholder="Enter task"
-                            onChange={e =>
-                                this.setState({ task: e.target.value })
-                            }
-                        />
-                    </div>
-                    <button>Submit</button>
-                </form>
                 <hr />
+                <CompletedTasks />
                 <h2>{this.state.message}</h2>
                 <p>
                     The task is ({this.state.task}) for {this.state.value}{' '}
                     ether
                 </p>
-                <p>Is the task completed</p>
+                <p>Is the task completed?</p>
                 <button onClick={this.incompleteTask}>no</button>{' '}
                 <button onClick={this.completeTask}>yes</button>
             </div>
