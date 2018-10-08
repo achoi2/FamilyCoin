@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import web3 from './web3';
-import allowance from './allowance';
+import web3 from '../web3';
+import allowance from '../allowance';
 
 class App extends Component {
     constructor(props) {

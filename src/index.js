@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Router from './Router'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let page = (
+    <Router/>
+)
+
+
+ReactDOM.render(page, document.getElementById('root'));
 
 
