@@ -53,7 +53,7 @@ contract Family {
         tasks.push(newTask);
     }
     
-    //completed a specific task
+    // completed a specific task
     function finishedTask(uint index) public payable {
         // checks if it is a child
         require(children[msg.sender]);
@@ -72,8 +72,8 @@ contract Family {
     //     tasks[index].completedTasks.transfer(tasks[index].value);
     // }
 
-    // // task is incompleted. return money to parent
-    // function returnMoney(uint index) public restricted {
-    //     parent.transfer(tasks[index].value);
-    // }
+    // task is incompleted. return money to parent
+    function returnMoney(uint index) public restricted {
+        parent.transfer(tasks[index].value);
+    }
 }
