@@ -1,6 +1,20 @@
 pragma solidity ^0.4.0;
 
-contract Allowance {
+contract FamilyFactory {
+    address[] public deployedFamilies;
+    
+    function createFamily() public {
+        address newFamily = new Family(msg.sender);
+    
+        deployedFamilies.push(newFamily);
+    }   
+
+    function getDeployedFamilies() public view returns (address[]) {
+        return deployedFamilies;
+    }
+}
+
+contract Family {
     struct Task {
         string description;
         uint value;
@@ -19,8 +33,8 @@ contract Allowance {
         _;
     }
     
-    function Allowance() public payable {
-        parent = msg.sender;
+    function Family(address creator) public payable {
+        parent = creator;
     }
     
     function setChild() public {
@@ -52,14 +66,14 @@ contract Allowance {
     } 
 
     // task is completed. send money to child
-    function giveMoney(uint index) public restricted {
-        require(tasks[index].complete);
+    // function giveMoney(uint index) public restricted {
+    //     require(tasks[index].complete);
         
-        tasks[index].completedTasks.transfer(tasks[index].value);
-    }
+    //     tasks[index].completedTasks.transfer(tasks[index].value);
+    // }
 
-    // task is incompleted. return money to parent
-    function returnMoney(uint index) public restricted {
-        parent.transfer(tasks[index].value);
-    }
+    // // task is incompleted. return money to parent
+    // function returnMoney(uint index) public restricted {
+    //     parent.transfer(tasks[index].value);
+    // }
 }
