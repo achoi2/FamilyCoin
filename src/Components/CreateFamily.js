@@ -19,7 +19,7 @@ class CreateFamily extends Component {
     render() {
         return (
             <form onSubmit={this.submitCreate}>
-                <h3>Create an Account</h3>
+                <h3>Create a Family Account</h3>
                 <button>create</button>
             </form>
         );
