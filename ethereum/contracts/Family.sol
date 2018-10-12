@@ -65,15 +65,26 @@ contract Family {
         tasks[index].complete = true;
     } 
 
-    // task is completed. send money to child
+    // // task is completed. send money to child
     // function giveMoney(uint index) public restricted {
     //     require(tasks[index].complete);
         
     //     tasks[index].completedTasks.transfer(tasks[index].value);
     // }
 
-    // task is incompleted. return money to parent
-    function returnMoney(uint index) public restricted {
-        parent.transfer(tasks[index].value);
+    // // task is incompleted. return money to parent
+    // function returnMoney(uint index) public restricted {
+    //     parent.transfer(tasks[index].value);
+    // }
+
+    function getSummary() public view returns (uint, address) {
+        return(
+            tasks.length,
+            parent
+        );
+    }
+
+    function getTaskCount() public view returns (uint) {
+        return tasks.length;
     }
 }
