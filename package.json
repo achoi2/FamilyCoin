@@ -2,10 +2,12 @@
   "name": "allowanceap",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://achoi2.github.io/AllowanceApp/",
   "dependencies": {
     "dotenv": "^6.1.0",
     "fs-extra": "^7.0.0",
     "ganache-cli": "^6.1.8",
+    "gh-pages": "^2.0.1",
     "mocha": "^5.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -19,6 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
