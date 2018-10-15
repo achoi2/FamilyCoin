@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/AllowanceApp/precache-manifest.76cd5bdcc40874f4ce3c22892c5d4694.js"
+  "/Allowance/precache-manifest.9270d3d0093d9c717423cbbe8551c643.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/AllowanceApp/index.html", {
+workbox.routing.registerNavigationRoute("/Allowance/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
