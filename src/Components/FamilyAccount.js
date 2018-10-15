@@ -1,13 +1,16 @@
 import React from 'react';
-import ViewTask from './ViewTask';
 import { Link } from 'react-router-dom';
+import { Box } from 'bloomer';
 
 const FamilyAccount = props => {
-    return <div>
-            <h3>Account number: {props.acNum}</h3>
-            {/* <ViewTask acNum={props.acNum} /> */}
-            <Link to={props.acNum}>View Details</Link>
-        </div>;
+    return (
+        <div>
+            <Box>
+                <h3>Account number: {props.acNum}</h3>
+                <Link to={props.acNum}>View Details</Link>
+            </Box>
+        </div>
+    );
 };
 
 export default FamilyAccount;

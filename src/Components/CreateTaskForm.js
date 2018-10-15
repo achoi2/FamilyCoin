@@ -1,29 +1,26 @@
 import React from 'react';
+import { Field, Input, Control, Button } from 'bloomer';
 
-const CreateTaskForm = (props) => {
-    return(
+const CreateTaskForm = props => {
+    return (
         <div>
-            <form onSubmit={props.createTask}>
+            <Field onSubmit={props.createTask}>
                 <h3>Set a task</h3>
-                <div>
-                    <input
+                <Control>
+                    <Input
                         placeholder="Enter amount"
                         value={props.value}
-                        onChange={e =>
-                            props.handleChangeValue(e.target.value)
-                        }
+                        onChange={e => props.handleChangeValue(e.target.value)}
                     />
-                    <input
+                    <Input
                         placeholder="Enter task"
-                        onChange={e =>
-                            props.handleChangeTask(e.target.value)
-                        }
+                        onChange={e => props.handleChangeTask(e.target.value)}
                     />
-                </div>
-                <button>Submit</button>
-            </form>
+                </Control>
+                <Button>Submit</Button>
+            </Field>
         </div>
     );
-}
+};
 
 export default CreateTaskForm;
