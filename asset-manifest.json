@@ -1,11 +1,11 @@
 {
-  "main.js": "/AllowanceApp/static/js/main.28191ef7.chunk.js",
-  "main.js.map": "/AllowanceApp/static/js/main.28191ef7.chunk.js.map",
-  "static/js/1.71d6ae19.chunk.js": "/AllowanceApp/static/js/1.71d6ae19.chunk.js",
-  "static/js/1.71d6ae19.chunk.js.map": "/AllowanceApp/static/js/1.71d6ae19.chunk.js.map",
+  "main.js": "/AllowanceApp/static/js/main.a4abedcd.chunk.js",
+  "main.js.map": "/AllowanceApp/static/js/main.a4abedcd.chunk.js.map",
+  "static/js/1.dfd8a6b8.chunk.js": "/AllowanceApp/static/js/1.dfd8a6b8.chunk.js",
+  "static/js/1.dfd8a6b8.chunk.js.map": "/AllowanceApp/static/js/1.dfd8a6b8.chunk.js.map",
   "runtime~main.js": "/AllowanceApp/static/js/runtime~main.27457f7d.js",
   "runtime~main.js.map": "/AllowanceApp/static/js/runtime~main.27457f7d.js.map",
   "index.html": "/AllowanceApp/index.html",
-  "precache-manifest.60017889272131b535fce01a0b282ecb.js": "/AllowanceApp/precache-manifest.60017889272131b535fce01a0b282ecb.js",
+  "precache-manifest.a80d5a6468848aa287d1f9631cc8db54.js": "/AllowanceApp/precache-manifest.a80d5a6468848aa287d1f9631cc8db54.js",
   "service-worker.js": "/AllowanceApp/service-worker.js"
 }
