@@ -5,10 +5,10 @@ const TasksTable = props => {
     console.log(props.task);
     return (
         <div>
-            <Table>
+            <Table isBordered>
                 <thead>
                     <tr>
-                        <th>Task</th>
+                        <th>Tasks</th>
                     </tr>
                 </thead>
                 <tbody>
