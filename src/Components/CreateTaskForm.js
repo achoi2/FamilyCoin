@@ -10,13 +10,13 @@ const CreateTaskForm = (props) => {
                         placeholder="Enter amount"
                         value={props.value}
                         onChange={e =>
-                            this.setState({ value: e.target.value })
+                            props.handleChangeValue(e.target.value)
                         }
                     />
                     <input
                         placeholder="Enter task"
                         onChange={e =>
-                            this.setState({ task: e.target.value })
+                            props.handleChangeTask(e.target.value)
                         }
                     />
                 </div>
