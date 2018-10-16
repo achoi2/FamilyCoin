@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import web3 from '../web3';
-import Allowance from '../getallowance';
+import Allowance from '../getaddress';
 import CreateTaskForm from './CreateTaskForm';
 import TasksTable from './TasksTable';
+import { Box } from 'bloomer';
 
 class ViewTask extends Component {
     constructor(props) {
@@ -29,6 +30,8 @@ class ViewTask extends Component {
                     return allowance.methods.tasks(index).call();
                 })
         );
+
+        console.log(task)
 
         this.setState({
             tasks: summary[0],
@@ -61,18 +64,20 @@ class ViewTask extends Component {
         }
         
         return (
-            <div>
-                <h3>Parent Account: {this.state.parent}</h3>
-                <h4>There are {this.state.tasks} tasks</h4>
-                <CreateTaskForm
-                    handleChangeTask={handleChangeTask}
-                    handleChangeValue={handleChangeValue}
-                    createTask={this.createTask}
-                    value={this.state.valueInput}
-                    task={this.state.taskInput}
-                />
-                <TasksTable task={this.state.task}/>
-            </div>
+            <Box>
+                <div>
+                    <h3>Parent Account: {this.state.parent}</h3>
+                    <h4>There are {this.state.tasks} tasks</h4>
+                    <CreateTaskForm
+                        handleChangeTask={handleChangeTask}
+                        handleChangeValue={handleChangeValue}
+                        createTask={this.createTask}
+                        value={this.state.valueInput}
+                        task={this.state.taskInput}
+                    />
+                    <TasksTable task={this.state.task} />
+                </div>
+            </Box>  
         );
     }
 }

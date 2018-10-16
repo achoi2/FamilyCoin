@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">');
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    margin-left: 1em;
+    width: 10em;
+    height: 15em;
+}
+
+.title {
+    margin-left: 2em;
+    align-self: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-family: 'Abril Fatface';
+}

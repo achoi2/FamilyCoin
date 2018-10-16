@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import allowance from '../allowance';
-import CreateFamily from './CreateFamily';
-import FamilyAccounts from './FamilyAccounts';
 import web3 from '../web3';
+import CreateAccounts from './CreateAccounts';
+import FamilyAccounts from './FamilyAccounts';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
     constructor(props) {
@@ -34,8 +36,10 @@ class App extends Component {
     render() {
         return (
             <div>
-                <CreateFamily submitCreate={this.submitCreate}/>
+                <Header />
+                <CreateAccounts submitCreate={this.submitCreate}/>
                 <FamilyAccounts families={this.state.families} />
+                <Footer />
             </div>
         );
     }
