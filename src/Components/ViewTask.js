@@ -39,17 +39,19 @@ class ViewTask extends Component {
     }
 
     createTask = async e => {
+        console.log('234')
         e.preventDefault();
         const allowance = Allowance(this.props.match.params.acNum);
-        try {
+        // try {
             const accounts = await web3.eth.getAccounts();
             await allowance.methods
                 .createTask(this.state.taskInput, this.state.valueInput)
                 .send({
                     from: accounts[0],
-                    value: web3.utils.toWei(this.state.valueInput, 'ether')
+                    value: web3.utils.toWei(this.state.valueInput, 'ether'),
+                    gas: '1000000'
                 });
-        } catch (err) {}
+        // } catch (err) {}
     };
 
     render() {
@@ -76,7 +78,7 @@ class ViewTask extends Component {
                         createTask={this.createTask}
                         value={this.state.valueInput}
                         task={this.state.taskInput}
-                        className="taskform"
+                        // className="taskform"
                     />
                     <TasksTable task={this.state.task} className="tabletask" />
                 </Box>
