@@ -19,7 +19,7 @@ const TasksTable = props => {
                         </tr>)}
                 </tbody>
             </Table>
-        </div>;
+        </div>
 };
 
 export default TasksTable;

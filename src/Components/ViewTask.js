@@ -4,6 +4,7 @@ import Allowance from '../getaddress';
 import CreateTaskForm from './CreateTaskForm';
 import TasksTable from './TasksTable';
 import { Box } from 'bloomer';
+import '../styles/ViewTask.css';
 
 class ViewTask extends Component {
     constructor(props) {
@@ -22,7 +23,6 @@ class ViewTask extends Component {
         const summary = await allowance.methods.getSummary().call();
         const taskCount = await allowance.methods.getTaskCount().call();
 
-
         const task = await Promise.all(
             Array(parseInt(taskCount))
                 .fill()
@@ -30,8 +30,6 @@ class ViewTask extends Component {
                     return allowance.methods.tasks(index).call();
                 })
         );
-
-        console.log(task)
 
         this.setState({
             tasks: summary[0],
@@ -55,29 +53,34 @@ class ViewTask extends Component {
     };
 
     render() {
-        const handleChangeTask = (task) => {
+        const handleChangeTask = task => {
             this.setState({ taskInput: task });
         };
 
-        const handleChangeValue = (value) => {
+        const handleChangeValue = value => {
             this.setState({ valueInput: value });
-        }
-        
+        };
+
         return (
-            <Box>
-                <div>
-                    <h3>Parent Account: {this.state.parent}</h3>
-                    <h4>There are {this.state.tasks} tasks</h4>
+            <div className="viewtask">
+                <Box className="viewbox">
+                    <h3 className="viewtitle">
+                        Parent Account: {this.state.parent}
+                    </h3>
+                    <h4 className="viewsubtitle">
+                        There are {this.state.tasks} tasks
+                    </h4>
                     <CreateTaskForm
                         handleChangeTask={handleChangeTask}
                         handleChangeValue={handleChangeValue}
                         createTask={this.createTask}
                         value={this.state.valueInput}
                         task={this.state.taskInput}
+                        className="taskform"
                     />
-                    <TasksTable task={this.state.task} />
-                </div>
-            </Box>  
+                    <TasksTable task={this.state.task} className="tabletask" />
+                </Box>
+            </div>
         );
     }
 }
