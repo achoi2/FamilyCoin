@@ -1,0 +1,9 @@
+.createbox {
+    display: flex;
+    justify-content: space-between;
+    width: 24em;
+}
+
+.createbutton {
+    margin-top: 2em;
+}

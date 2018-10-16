@@ -1,0 +1,20 @@
+.familyaccount {
+    margin-bottom: 3em;
+    margin-top: 3em;
+    width: 50em;
+    flex-wrap: wrap;
+}
+
+.accountbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountlink {
+    padding-top: 3.5em;
+    color: #67C2D0;
+}
+
+.subtitle {
+    margin-top: .5em;
+}

@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box } from 'bloomer'; 
-import './styles/FamilyAccount.css';
+import { Box, Title, Subtitle } from 'bloomer';
+import '../styles/FamilyAccount.css';
 
 const FamilyAccount = props => {
     return (
-        <div>
-            <Box className="familyaccount">
-                <h3>Account number: {props.acNum}</h3>
-                <Link to={props.acNum}>View Details</Link>
+        <div className="familyaccount">
+            <Box className="accountbox">
+                <Title isSize="5">
+                    Account Number <Subtitle className="subtitle" isSize="5">{props.acNum}</Subtitle>
+                </Title>
+                <Link to={props.acNum} className="accountlink">
+                    View Details
+                </Link>
             </Box>
         </div>
     );
