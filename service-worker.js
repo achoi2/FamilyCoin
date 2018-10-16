@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/FamilyCoin/precache-manifest.1ccbd03977cfe4a337d9735ca93a21dd.js"
+  "/FamilyCoin/precache-manifest.6eb6e6e190728adc80e245eb60ddfe06.js"
 );
 
 workbox.clientsClaim();
