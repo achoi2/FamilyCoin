@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/FamilyCoin/precache-manifest.7270fbd3c73817eca57f7029373fe393.js"
+  "/AllowanceApp/precache-manifest.2c5be68dd95a1aaca5c53933a1bbed40.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/FamilyCoin/index.html", {
+workbox.routing.registerNavigationRoute("/AllowanceApp/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
