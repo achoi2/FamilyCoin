@@ -4,8 +4,7 @@ import web3 from '../web3';
 import CreateAccounts from './CreateAccounts';
 import FamilyAccounts from './FamilyAccounts';
 import Header from './Header';
-import Footer from './Footer';
-import '../styles/HomePage.css'
+import '../styles/HomePage.css';
 
 class App extends Component {
     constructor(props) {
@@ -37,16 +36,15 @@ class App extends Component {
     render() {
         return (
             <div className="homepage">
-                <Header className="header"/>
-                <CreateAccounts 
+                <Header className="header" />
+                <CreateAccounts
                     submitCreate={this.submitCreate}
                     className="createaccounts"
-                    />
-                <FamilyAccounts 
-                    families={this.state.families} 
+                />
+                <FamilyAccounts
+                    families={this.state.families}
                     className="familyaccounts"
-                    />
-                <Footer className="footer"/>
+                />
             </div>
         );
     }
