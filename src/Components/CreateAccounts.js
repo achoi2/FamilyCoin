@@ -8,7 +8,7 @@ const CreateAccounts = (props) => {
             <Box className="createbox">
                 <h3>Create a Family Account</h3>
                 <Button onClick={props.submitCreate}
-                    isColor="dark" className="createbutton" isOutlined
+                    isColor="dark" className="createbutton"
                 >Create</Button>
             </Box>
         </div>

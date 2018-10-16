@@ -1,11 +1,12 @@
 import React from 'react';
 import { Table } from 'bloomer';
+import '../styles/TasksTable.css';
 
 const TasksTable = props => {
     return <div>
             <Table isBordered>
                 <thead>
-                    <tr>
+                    <tr className="tabletitles">
                         <th>Number</th>
                         <th>Tasks</th>
                         <th>Cost</th>
