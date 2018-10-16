@@ -1,13 +1,13 @@
 {
-  "main.css": "/AllowanceApp/static/css/main.4789f9d2.chunk.css",
-  "main.js": "/AllowanceApp/static/js/main.cbed4c9e.chunk.js",
-  "main.js.map": "/AllowanceApp/static/js/main.cbed4c9e.chunk.js.map",
-  "static/js/1.6bb8ed7f.chunk.js": "/AllowanceApp/static/js/1.6bb8ed7f.chunk.js",
-  "static/js/1.6bb8ed7f.chunk.js.map": "/AllowanceApp/static/js/1.6bb8ed7f.chunk.js.map",
-  "runtime~main.js": "/AllowanceApp/static/js/runtime~main.27457f7d.js",
-  "runtime~main.js.map": "/AllowanceApp/static/js/runtime~main.27457f7d.js.map",
-  "static/css/main.4789f9d2.chunk.css.map": "/AllowanceApp/static/css/main.4789f9d2.chunk.css.map",
-  "index.html": "/AllowanceApp/index.html",
-  "precache-manifest.2c5be68dd95a1aaca5c53933a1bbed40.js": "/AllowanceApp/precache-manifest.2c5be68dd95a1aaca5c53933a1bbed40.js",
-  "service-worker.js": "/AllowanceApp/service-worker.js"
+  "main.css": "/FamilyCoin/static/css/main.4789f9d2.chunk.css",
+  "main.js": "/FamilyCoin/static/js/main.cbed4c9e.chunk.js",
+  "main.js.map": "/FamilyCoin/static/js/main.cbed4c9e.chunk.js.map",
+  "static/js/1.6bb8ed7f.chunk.js": "/FamilyCoin/static/js/1.6bb8ed7f.chunk.js",
+  "static/js/1.6bb8ed7f.chunk.js.map": "/FamilyCoin/static/js/1.6bb8ed7f.chunk.js.map",
+  "runtime~main.js": "/FamilyCoin/static/js/runtime~main.835e5015.js",
+  "runtime~main.js.map": "/FamilyCoin/static/js/runtime~main.835e5015.js.map",
+  "static/css/main.4789f9d2.chunk.css.map": "/FamilyCoin/static/css/main.4789f9d2.chunk.css.map",
+  "index.html": "/FamilyCoin/index.html",
+  "precache-manifest.1ccbd03977cfe4a337d9735ca93a21dd.js": "/FamilyCoin/precache-manifest.1ccbd03977cfe4a337d9735ca93a21dd.js",
+  "service-worker.js": "/FamilyCoin/service-worker.js"
 }
