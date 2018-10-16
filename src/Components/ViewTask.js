@@ -31,6 +31,8 @@ class ViewTask extends Component {
                 })
         );
 
+        console.log(task)
+
         this.setState({
             tasks: summary[0],
             parent: summary[1],
