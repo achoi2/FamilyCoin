@@ -48,8 +48,8 @@ class ViewTask extends Component {
                 .createTask(this.state.taskInput, this.state.valueInput)
                 .send({
                     from: accounts[0],
-                    value: web3.utils.toWei(this.state.valueInput, 'ether'),
-                    gas: '2000000'
+                    value: web3.utils.toWei(this.state.valueInput, 'wei'),
+                    gas: '1000000'
                 });
         } catch (err) {}
     };
@@ -78,7 +78,6 @@ class ViewTask extends Component {
                         createTask={this.createTask}
                         value={this.state.valueInput}
                         task={this.state.taskInput}
-                        // className="taskform"
                     />
                     <TasksTable task={this.state.task} className="tabletask" />
                 </Box>

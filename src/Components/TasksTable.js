@@ -3,6 +3,7 @@ import { Table } from 'bloomer';
 import '../styles/TasksTable.css';
 
 const TasksTable = props => {
+    console.log(props)
     return <div>
             <Table isBordered>
                 <thead>
