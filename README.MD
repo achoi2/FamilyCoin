@@ -1,23 +1,19 @@
 # FamilyCoin
 FamilyCoin is a decentralized application build on the etheruem network. 
 
-
-
-
 ### Prerequisites
-Heres how to get started. 
-
-The metamask chrome extension is required.
+Metamask chrome extension is required.
 
 https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 
+### Installation
+
 ```
-download metamask chrome extension
 npm install
 npm start
 ```
 
-####
+### Screenshots
 ![](media/part1.gif)
 
 To create an account, press the create button. Next hit submit on metamask. Wait for confirmation from metamask. Once there is confirmation, refresh the page. 
