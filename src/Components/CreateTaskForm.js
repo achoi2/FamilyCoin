@@ -1,5 +1,5 @@
 import React from 'react';
-import { Field, Input, Control, Button } from 'bloomer';
+import { Input, Control, Button } from 'bloomer';
 import '../styles/CreateTaskForm.css';
 
 const CreateTaskForm = props => {

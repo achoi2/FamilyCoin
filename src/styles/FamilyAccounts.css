@@ -1,0 +1,10 @@
+.accountrow {
+    display: flex;
+}
+
+h2 {
+    margin-right: 2em;
+    align-self: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}

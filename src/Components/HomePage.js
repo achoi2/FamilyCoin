@@ -29,7 +29,7 @@ class App extends Component {
         const accounts = await web3.eth.getAccounts();
         await allowance.methods.createFamily().send({
             from: accounts[0],
-            gas: '2000000'
+            gas: '1000000'
         });
     };
 
