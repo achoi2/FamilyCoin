@@ -42,16 +42,16 @@ class ViewTask extends Component {
         console.log('234')
         e.preventDefault();
         const allowance = Allowance(this.props.match.params.acNum);
-        // try {
+        try {
             const accounts = await web3.eth.getAccounts();
             await allowance.methods
                 .createTask(this.state.taskInput, this.state.valueInput)
                 .send({
                     from: accounts[0],
                     value: web3.utils.toWei(this.state.valueInput, 'ether'),
-                    gas: '1000000'
+                    gas: '2000000'
                 });
-        // } catch (err) {}
+        } catch (err) {}
     };
 
     render() {
