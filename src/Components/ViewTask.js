@@ -39,7 +39,6 @@ class ViewTask extends Component {
     }
 
     createTask = async e => {
-        console.log('234')
         e.preventDefault();
         const allowance = Allowance(this.props.match.params.acNum);
         try {
@@ -48,8 +47,7 @@ class ViewTask extends Component {
                 .createTask(this.state.taskInput, this.state.valueInput)
                 .send({
                     from: accounts[0],
-                    value: web3.utils.toWei(this.state.valueInput, 'wei'),
-                    gas: '1000000'
+                    value: web3.utils.toWei(this.state.valueInput, 'ether')
                 });
         } catch (err) {}
     };
