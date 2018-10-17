@@ -1,7 +1,7 @@
 # FamilyCoin
 FamilyCoin is a decentralized application build on the etheruem network. 
 
-![](media/walkthrough2.gif)
+![](media/part1.gif)
 
 
 ### Prerequisites
@@ -12,7 +12,7 @@ The metamask chrome extension is required.
 https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 
 ```
-download metamask chrome extension.
+download metamask chrome extension
 npm install
 npm start
 ```

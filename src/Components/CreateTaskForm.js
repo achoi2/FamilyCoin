@@ -3,7 +3,6 @@ import { Input, Control, Button } from 'bloomer';
 import '../styles/CreateTaskForm.css';
 
 const CreateTaskForm = props => {
-    console.log(props);
     return (
         <div className="createtaskform">
             <h3>Set a task</h3>
