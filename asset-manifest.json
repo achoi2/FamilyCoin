@@ -1,13 +1,13 @@
 {
   "main.css": "/FamilyCoin/static/css/main.c7e2d0e8.chunk.css",
-  "main.js": "/FamilyCoin/static/js/main.bde14f68.chunk.js",
-  "main.js.map": "/FamilyCoin/static/js/main.bde14f68.chunk.js.map",
+  "main.js": "/FamilyCoin/static/js/main.645b2c16.chunk.js",
+  "main.js.map": "/FamilyCoin/static/js/main.645b2c16.chunk.js.map",
   "static/js/1.ea1429d6.chunk.js": "/FamilyCoin/static/js/1.ea1429d6.chunk.js",
   "static/js/1.ea1429d6.chunk.js.map": "/FamilyCoin/static/js/1.ea1429d6.chunk.js.map",
   "runtime~main.js": "/FamilyCoin/static/js/runtime~main.835e5015.js",
   "runtime~main.js.map": "/FamilyCoin/static/js/runtime~main.835e5015.js.map",
   "static/css/main.c7e2d0e8.chunk.css.map": "/FamilyCoin/static/css/main.c7e2d0e8.chunk.css.map",
   "index.html": "/FamilyCoin/index.html",
-  "precache-manifest.ea61734071103e1d986e7107ed89593f.js": "/FamilyCoin/precache-manifest.ea61734071103e1d986e7107ed89593f.js",
+  "precache-manifest.ed5be58183e94e190b8d888e6aa867e1.js": "/FamilyCoin/precache-manifest.ed5be58183e94e190b8d888e6aa867e1.js",
   "service-worker.js": "/FamilyCoin/service-worker.js"
 }
