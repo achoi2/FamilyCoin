@@ -1,5 +1,5 @@
 # FamilyCoin
-FamilyCoin is a decentralized application build on the etheruem network. 
+FamilyCoin is a decentralized application build on the etheruem network. FamilyCoin helps families create task for their children. Once the children complete their task, they are given a reward. 
 
 ### Prerequisites
 Metamask chrome extension is required.
