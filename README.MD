@@ -4,7 +4,6 @@ FamilyCoin is a decentralized application built on the etheruem network. FamilyC
 ### Prerequisites
 Metamask chrome extension is required.
 
-https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 
 ### Installation
 
