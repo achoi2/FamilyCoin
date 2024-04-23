@@ -8,7 +8,7 @@
     "dotenv": "^6.1.0",
     "fs-extra": "^7.0.0",
     "ganache-cli": "^6.1.8",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^5.0.0",
     "mocha": "^5.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
